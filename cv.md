@@ -19,10 +19,27 @@ ___
 - HTML
 - CSS/ SCSS
 - JS / TS
-- Angular / RxJs
-- NodeJs
+- Angular/NodeJs
 - Git
  ___
+#### Code Example
+```
+    function disemvowel(str) {
+        let vowels = 'ioeau'
+        return str.split('').filter((item) => !vowels.includes(item.toLowerCase())).join('');
+    }
+```
+___
+#### Experience
+*Work as Frontend Angular Developer for 8 month.* 
+___
+#### Education
+*BNTU, Mechanical engineering faculty, bachelor's degree
+IT-Academy, Redev Courses*
+___
+#### English
+*Intermediate(B1)*
+___
 
 
 
