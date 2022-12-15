@@ -4,7 +4,8 @@
   "description": "https://23Boom23.github.io/rsschool-cv/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass -w ../rsschool-cv/scss sass/ -o ../rsschool-cv/css"
   },
   "repository": {
     "type": "git",
