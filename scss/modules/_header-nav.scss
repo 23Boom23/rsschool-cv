@@ -1,10 +1,5 @@
 .header-nav {
   background: $primary3;
-
-  &__wrapper {
-    max-width: 1440px;
-  }
-
   &__item {
     &:not(:last-child) {
       margin-right: 3rem;
@@ -15,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 
   &__link {
