@@ -1,0 +1,21 @@
+.header-nav {
+  background: $primary3;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__link {
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    color: $link-text-color;
+  }
+}

@@ -1,0 +1,23 @@
+.profile {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary3;
+  }
+
+  &__photo-block {
+    // margin-top: 3rem;
+  }
+
+  &__img-card {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.profile__name-block {
+}
+.profile__cv-block {
+}
