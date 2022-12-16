@@ -1,0 +1,26 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://23Boom23.github.io/rsschool-cv/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass -w ./scss sass/ -o ./css",
+    "sync": "browser-sync start --server --files='**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23Boom23/rsschool-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/23Boom23/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/23Boom23/rsschool-cv#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "node-sass": "^8.0.0"
+  }
+}
