@@ -1,5 +1,9 @@
-$wrapper-width: 60%;
-
+$wrapper-width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   font-size: 10px;
   line-height: 10px;
@@ -17,6 +21,7 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
+  padding: 0;
 }
 
 h1,
@@ -25,27 +30,34 @@ h3 {
   margin: 0;
 }
 
+.two__columns {
+  display: flex;
+}
+
+.left__column {
+  width: 42%;
+}
+
+.right__column {
+  width: 58%;
+}
+
 a {
   text-decoration: none;
   color: $link-text-color;
   &:hover {
     text-decoration: underline;
   }
+}
 
-  .wrapper {
-    width: $wrapper-width;
-    max-width: 1440px;
-  }
+.wrapper {
+  width: $wrapper-width;
+  max-width: 1440px;
+}
 
-  nav,
-  header,
-  section {
-    display: flex;
-    justify-content: center;
-  }
-
-  .aside-info {
-    display: flex;
-    flex-direction: wrap;
-  }
+nav,
+header,
+section {
+  display: flex;
+  justify-content: center;
 }

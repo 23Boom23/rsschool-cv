@@ -1,11 +1,15 @@
-.social__link {
+.social-info__link {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; }
+
+.social-info__icon {
   width: 1.6rem;
   height: 1.6rem; }
-  .social__link__icon {
-    display: flex;
-    justify-content: center; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
 
 html {
   font-size: 10px;
@@ -21,29 +25,38 @@ body {
 
 ul[class],
 ol[class] {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 h1,
 h2,
 h3 {
   margin: 0; }
 
+.two__columns {
+  display: flex; }
+
+.left__column {
+  width: 42%; }
+
+.right__column {
+  width: 58%; }
+
 a {
   text-decoration: none;
   color: #333333; }
   a:hover {
     text-decoration: underline; }
-  a .wrapper {
-    width: 60%;
-    max-width: 1440px; }
-  a nav,
-  a header,
-  a section {
-    display: flex;
-    justify-content: center; }
-  a .aside-info {
-    display: flex;
-    flex-direction: wrap; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px; }
+
+nav,
+header,
+section {
+  display: flex;
+  justify-content: center; }
 
 .header-nav {
   background: #d4d1d1; }
@@ -69,3 +82,7 @@ a {
   border-radius: 50%;
   width: 20rem;
   height: 20rem; }
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column; }

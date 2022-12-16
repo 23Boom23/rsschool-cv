@@ -1,12 +1,12 @@
-.social__link {
-  display: flex;
-  flex-direction: column;
-  width: 1.6rem;
-  height: 1.6rem;
-  &__icon {
+.social-info {
+  &__link {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
-}
-.social__description {
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  &__description {
+  }
 }
