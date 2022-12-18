@@ -1,0 +1,31 @@
+.profile {
+  background: $primary3;
+  &__wrapper {
+    display: flex;
+    line-height: 2rem;
+    justify-content: center;
+    background: $primary3;
+  }
+
+  &__photo-block {
+    text-align: center;
+  }
+  &__info-block {
+    text-align: justify;
+  }
+
+  &__img-card {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+  }
+  &__cv-block {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__name-block {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  background-color: $primary3;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+}
+.footer_age {
+}
+.footer__github {
+}

@@ -1,0 +1,10 @@
+.skils-info {
+  background: $primary3;
+  &__wrapper {
+    margin-top: 1rem;
+    line-height: 1.6rem;
+  }
+  &__text {
+    list-style: disc outside;
+  }
+}
