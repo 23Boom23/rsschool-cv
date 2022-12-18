@@ -1,4 +1,4 @@
-.skils-info {
+.languages {
   background: $primary3;
   border-bottom: 1px solid rgb(100, 20, 20);
   border-right: 1px solid rgb(100, 20, 20);
@@ -7,6 +7,10 @@
     line-height: 1.6rem;
   }
   &__text {
+  }
+  &__block {
+  }
+  &__info {
     list-style: disc outside;
   }
 }

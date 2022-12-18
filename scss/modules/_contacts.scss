@@ -1,20 +1,28 @@
 .contacts {
+  background: $primary3;
+  border-bottom: 1px solid rgb(100, 20, 20);
+  border-right: 1px solid rgb(100, 20, 20);
   &__wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
   }
 }
-.contacts__title {
-}
 
-.contacts {
-}
+// .contacts {
+// }
 
-.contacts__title {
-}
-.social-info__link {
-}
-.social-info__description {
-}
-.social-info__icon {
-}
+// .contacts__title {
+// }
+// .social-info__link {
+// }
+// .social-info__description {
+// }
+// .social-info__icon {
+// }

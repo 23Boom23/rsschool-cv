@@ -31,7 +31,7 @@ h3 {
 }
 
 .two__columns {
-  display: flex;
+  width: 100%;
 }
 
 .left__column {
@@ -57,7 +57,8 @@ a {
 
 nav,
 header,
-section {
+section,
+footer {
   display: flex;
   justify-content: center;
 }

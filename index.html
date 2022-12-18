@@ -41,24 +41,18 @@
         <div class="profile__photo-block">
           <img src="./img/avatar/avatar.jpg" alt="photo" class="profile__img-card" />
           <div class="profile__name-block">
-            <h1>Frontend Developer</h1>
-            <h2>Harus Aliaksei</h2>
+            <h1 class="profile__name-block">Frontend Developer</h1>
           </div>
         </div>
         <div class="profile__cv-block">
           <div class="profile__about-block">
             <h2>About me</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolor exercitationem
-              expedita eveniet repudiandae voluptates architecto blanditiis, omnis debitis quis,
-              perspiciatis libero ullam rem ad recusandae tempore commodi animi maiores dolorum
-              reprehenderit nesciunt totam deserunt. Unde facere blanditiis sed perferendis corrupti
-              ea, nemo eaque et quibusdam qui animi assumenda quidem, minima veritatis, commodi
-              itaque laborum! Atque voluptas voluptatibus sequi unde nemo minus illo nobis
-              temporibus fuga labore necessitatibus eligendi exercitationem reprehenderit ipsum,
-              odio nulla amet similique sit dignissimos eos nostrum? Nesciunt vero beatae sit quo
-              repudiandae eaque, deserunt mollitia voluptatum? Odio nobis laudantium, blanditiis
-              ducimus consequuntur cumque fugiat ratione at.
+            <p class="profile__info-block">
+              My name is Harus Aleksei. I'm a Front End Engineer based in Minsk ☀️. I describe
+              myself as a passionate developer who loves coding, teach new, and the web platform ❤️.
+              Aside from my job, I like to create and contribute new features. That helps me to
+              learn a ton of new stuff, grow as a developer. In my free time you can find me cycling
+              🚲 , at the gym 🏋️‍♂️, on tech meetups and conferences around Minsk and Europe 🗺.
             </p>
           </div>
           <div class="profile__cv-block">
@@ -68,8 +62,8 @@
         </div>
       </div>
     </header>
-    <div class="two__columns">
-      <div class="left__column">
+    <section class="two__columns">
+      <div class="wrapper left__column">
         <!-- CONTACTS -->
         <section class="contacts">
           <div class="contacts__wrapper">
@@ -112,18 +106,18 @@
         </section>
         <!-- CONTACTS -->
         <!-- SKILLS -->
-        <section class="skills">
-          <div class="skills__wrapper">
-            <h2 class="skills__title">Skills:</h2>
-            <ul class="skills__block">
-              <li class="skills__info">HTML</li>
-              <li class="skills__info">CSS/SCSS</li>
-              <li class="skills__info">JS/TS</li>
-              <li class="skills__info">Angular</li>
-              <li class="skills__info">RxJS</li>
-              <li class="skills__info">Git</li>
-              <li class="skills__info">NodeJS</li>
-              <li class="skills__info">Angular Material/Tailwand</li>
+        <section class="skils-info">
+          <div class="skils-info__wrapper">
+            <h2 class="skils-info__title">Skills:</h2>
+            <ul class="skils-info__block">
+              <li class="skils-info__text">HTML</li>
+              <li class="skils-info__text">CSS/SCSS</li>
+              <li class="skils-info__text">JS/TS</li>
+              <li class="skils-info__text">Angular</li>
+              <li class="skils-info__text">RxJS</li>
+              <li class="skils-info__text">Git</li>
+              <li class="skils-info__text">NodeJS</li>
+              <li class="skils-info__text">Angular Material/Tailwand</li>
             </ul>
           </div>
         </section>
@@ -141,26 +135,85 @@
         </section>
         <!-- LANGUAGES -->
       </div>
-      <div class="right__column">
-        <section class="expirience">
-          <h2>Expirience:</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, pariatur.</p>
+      <div class="wrapper right__column">
+        <section class="experience">
+          <div class="experience__wrapper">
+            <h2 class="experience__title">Experience:</h2>
+            <p class="experience__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, pariatur.
+            </p>
+          </div>
         </section>
         <section class="courses">
-          <h2>Courses</h2>
+          <div class="courses__wrapper">
+            <h2 class="courses__title">Courses:</h2>
+            <p>Redev</p>
+            <p>Udemy</p>
+            <p>Youtube</p>
+          </div>
         </section>
         <section class="projects">
-          <h2>Projects</h2>
+          <div class="projects__wrapper">
+            <h2 class="projects__title">Projects</h2>
+            <p class="projects__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatibus.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatibus.</p>
+          </div>
         </section>
         <section class="education">
-          <h2>Education</h2>
+          <div class="education__wrapper">
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates!</p>
+          </div>
         </section>
         <section class="code-example">
-          <h2>Code example</h2>
-        </section> -->
+          <div class="code-example__wrapper">
+            <h2>Code example</h2>
+            <pre>
+            <code>
+              public getConfigForGrid(action: string): any {
+                const gridId = !this.gridId ? this.currentUrl : this.gridId;
+                const item = JSON.parse(window.localStorage.getItem(this.storageKey + gridId));
+                if (!item) {
+                  return;
+                }
+                if (action === 'filtering' && !Array.isArray(item['filtering'])) {
+                  item['filtering'] = [];
+                }
+                return this.getStoredState(action, item[action]);
+              }
+            </code>
+          </pre>
+          </div>
+        </section>
       </div>
-    </div>
-    <footer class="footer"></footer>
-    -->
+    </section>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__logo">
+          <a href="https://rs.school/js-stage0/">
+            <img src="./img/avatar/svg/rs_school_js.svg" alt="rsshool" width="80px" height="80px" />
+          </a>
+        </div>
+        <div class="footer_age">
+          <h2>Done at 2022</h2>
+        </div>
+        <div class="footer__github">
+          <a href="https://github.com/23Boom23">
+            <img
+              src="./img/avatar/svg/github-svgrepo-com.svg"
+              alt="github"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

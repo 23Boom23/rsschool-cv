@@ -34,7 +34,7 @@ h3 {
   margin: 0; }
 
 .two__columns {
-  display: flex; }
+  width: 100%; }
 
 .left__column {
   width: 42%; }
@@ -54,7 +54,8 @@ a {
 
 nav,
 header,
-section {
+section,
+footer {
   display: flex;
   justify-content: center; }
 
@@ -72,17 +73,63 @@ section {
     font-size: 1.6rem;
     color: #333333; }
 
-.profile__wrapper {
+.profile {
+  background: #d4d1d1;
+  border-bottom: 1px solid #641414; }
+  .profile__wrapper {
+    display: flex;
+    line-height: 2rem;
+    justify-content: center;
+    background: #d4d1d1; }
+  .profile__photo-block {
+    text-align: center; }
+  .profile__info-block {
+    text-align: justify; }
+  .profile__img-card {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem; }
+  .profile__cv-block {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center; }
+  .profile__name-block {
+    margin: 1rem; }
+
+.contacts {
+  background: #d4d1d1;
+  border-bottom: 1px solid #641414;
+  border-right: 1px solid #641414; }
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+    margin-top: 1rem; }
+  .contacts__title {
+    font-size: 1.6rem; }
+
+.skils-info {
+  background: #d4d1d1;
+  border-bottom: 1px solid #641414;
+  border-right: 1px solid #641414; }
+  .skils-info__wrapper {
+    margin-top: 1rem;
+    line-height: 1.6rem; }
+  .skils-info__text {
+    list-style: disc outside; }
+
+.languages {
+  background: #d4d1d1;
+  border-bottom: 1px solid #641414;
+  border-right: 1px solid #641414; }
+  .languages__wrapper {
+    margin-top: 1rem;
+    line-height: 1.6rem; }
+  .languages__info {
+    list-style: disc outside; }
+
+.wrapper .footer__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #d4d1d1; }
-
-.profile__img-card {
-  border-radius: 50%;
-  width: 20rem;
-  height: 20rem; }
-
-.contacts__wrapper {
-  display: flex;
-  flex-direction: column; }
+  justify-content: space-between; }

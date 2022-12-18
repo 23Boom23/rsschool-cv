@@ -1,13 +1,18 @@
 .profile {
+  background: $primary3;
+  border-bottom: 1px solid rgb(100, 20, 20);
   &__wrapper {
     display: flex;
+    line-height: 2rem;
     justify-content: center;
-    align-items: center;
     background: $primary3;
   }
 
   &__photo-block {
-    // margin-top: 3rem;
+    text-align: center;
+  }
+  &__info-block {
+    text-align: justify;
   }
 
   &__img-card {
@@ -15,9 +20,13 @@
     width: 20rem;
     height: 20rem;
   }
-}
+  &__cv-block {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 
-.profile__name-block {
-}
-.profile__cv-block {
+  &__name-block {
+    margin: 1rem;
+  }
 }
