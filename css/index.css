@@ -34,14 +34,7 @@ h3 {
   margin: 0; }
 
 .two__columns {
-  width: 100%; }
-
-.left__column {
-  background-color: #d4d1d1;
-  width: 42%; }
-
-.right__column {
-  width: 58%; }
+  background-color: #d4d1d1; }
 
 a {
   text-decoration: none;
@@ -51,6 +44,10 @@ a {
 
 .wrapper {
   width: 100%;
+  max-width: 1440px; }
+
+.column__wrapper2 {
+  width: 66%;
   max-width: 1440px; }
 
 nav,

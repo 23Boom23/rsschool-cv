@@ -31,16 +31,15 @@ h3 {
 }
 
 .two__columns {
-  width: 100%;
+  background-color: $primary3;
 }
 
 .left__column {
-  background-color: $primary3;
-  width: 42%;
+  // width: 42%;
 }
 
 .right__column {
-  width: 58%;
+  // width: 58%;
 }
 
 a {
@@ -53,6 +52,14 @@ a {
 
 .wrapper {
   width: $wrapper-width;
+  max-width: 1440px;
+}
+
+.column__wrapper1 {
+}
+
+.column__wrapper2 {
+  width: 66%;
   max-width: 1440px;
 }
 
