@@ -34,7 +34,9 @@ h3 {
   margin: 0; }
 
 .two__columns {
-  background-color: #d4d1d1; }
+  background-color: #d4d1d1;
+  display: flex;
+  justify-content: center; }
 
 a {
   text-decoration: none;

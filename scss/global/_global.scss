@@ -32,6 +32,8 @@ h3 {
 
 .two__columns {
   background-color: $primary3;
+  display: flex;
+  justify-content: center;
 }
 
 .left__column {
