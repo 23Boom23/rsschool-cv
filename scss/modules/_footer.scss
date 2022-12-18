@@ -1,7 +1,6 @@
 .footer {
-}
-.wrapper {
-  .footer__wrapper {
+  background-color: $primary3;
+  &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
