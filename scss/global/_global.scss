@@ -38,9 +38,11 @@ h3 {
 
 .left__column {
   // width: 42%;
+  flex-wrap: wrap;
 }
 
 .right__column {
+  flex-wrap: wrap;
   // width: 58%;
 }
 

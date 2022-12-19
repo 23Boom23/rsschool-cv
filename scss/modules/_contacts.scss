@@ -3,24 +3,21 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     line-height: 2rem;
     margin-top: 1rem;
   }
 
   &__title {
     font-size: 1.6rem;
+    margin-bottom: 0.5rem;
   }
 }
 
-// .contacts {
-// }
+.social-info__link {
+  text-align: left;
+}
 
-// .contacts__title {
-// }
-// .social-info__link {
-// }
-// .social-info__description {
-// }
-// .social-info__icon {
-// }
+.social-info__description {
+  vertical-align: middle
+}
+
