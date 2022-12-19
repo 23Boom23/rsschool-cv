@@ -21,7 +21,8 @@ body {
   padding: 0;
   height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed; }
+  text-rendering: optimizeSpeed;
+  background-color: #d4d1d1; }
 
 ul[class],
 ol[class] {
@@ -34,15 +35,9 @@ h3 {
   margin: 0; }
 
 .two__columns {
-  background-color: #d4d1d1;
   display: flex;
-  justify-content: center; }
-
-.left__column {
-  flex-wrap: wrap; }
-
-.right__column {
-  flex-wrap: wrap; }
+  max-width: 1440px;
+  margin: 0 auto; }
 
 a {
   text-decoration: none;
@@ -54,9 +49,11 @@ a {
   width: 100%;
   max-width: 1440px; }
 
+.column__wrapper1 {
+  border-right: 2px solid; }
+
 .column__wrapper2 {
-  width: 66%;
-  max-width: 1440px; }
+  width: 58%; }
 
 nav,
 header,
@@ -85,7 +82,8 @@ footer {
     display: flex;
     line-height: 2rem;
     justify-content: center;
-    background: #d4d1d1; }
+    background: #d4d1d1;
+    border-bottom: 2px solid; }
   .profile__photo-block {
     text-align: center; }
   .profile__info-block {
@@ -144,6 +142,8 @@ footer {
   background-color: #d4d1d1; }
   .courses__wrapper {
     margin-top: 1rem; }
+  .courses__list {
+    text-align: center; }
 
 .projects {
   background-color: #d4d1d1; }
@@ -151,7 +151,8 @@ footer {
     margin-top: 1rem; }
 
 .projects__title {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  text-align: center; }
 
 .projects__cards {
   display: grid;
@@ -190,16 +191,20 @@ footer {
 .education {
   background-color: #d4d1d1; }
   .education__wrapper {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    text-align: center; }
 
 .code-example {
   background-color: #d4d1d1; }
   .code-example__wrapper {
     margin-top: 1rem; }
+  .code-example__title {
+    text-align: center; }
 
 .footer {
   background-color: #d4d1d1; }
   .footer__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-top: 2px solid; }

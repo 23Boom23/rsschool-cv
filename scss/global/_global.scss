@@ -16,6 +16,7 @@ body {
   height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  background-color: $primary3;
 }
 
 ul[class],
@@ -31,19 +32,9 @@ h3 {
 }
 
 .two__columns {
-  background-color: $primary3;
   display: flex;
-  justify-content: center;
-}
-
-.left__column {
-  // width: 42%;
-  flex-wrap: wrap;
-}
-
-.right__column {
-  flex-wrap: wrap;
-  // width: 58%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -60,11 +51,11 @@ a {
 }
 
 .column__wrapper1 {
+  border-right: 2px solid;
 }
 
 .column__wrapper2 {
-  width: 66%;
-  max-width: 1440px;
+  width: 58%;
 }
 
 nav,
