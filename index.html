@@ -261,7 +261,7 @@
                 if (!item) {
                   return;
                 }
-                if (action === 'filtering' &amp&amp !Array.isArray(item['filtering'])) {
+                if (action === 'filtering' &amp;&amp; !Array.isArray(item['filtering'])) {
                   item['filtering'] = [];
                 }
                 return this.getStoredState(action, item[action]);
