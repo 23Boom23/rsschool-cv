@@ -56,8 +56,8 @@
             </p>
           </div>
           <div class="profile__cv-block">
-            <button class="profile__exsel-button">CV-exsel</button>
-            <button class="profile__exsel-button">CV-markdown</button>
+            <button type="button" class="profile__exsel-button">CV-exsel</button>
+            <button type="button" class="profile__exsel-button">CV-markdown</button>
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
                 if (!item) {
                   return;
                 }
-                if (action === 'filtering' && !Array.isArray(item['filtering'])) {
+                if (action === 'filtering' &amp&amp !Array.isArray(item['filtering'])) {
                   item['filtering'] = [];
                 }
                 return this.getStoredState(action, item[action]);
