@@ -1,32 +1,203 @@
+@use '../constants/constants' as *;
+
 .profile {
-  background: $primary3;
+  background: linear-gradient(135deg, $primary-gradient-start 60%, $primary-gradient-end 100%);
+  border-radius: 2rem;
+  box-shadow: $profile-shadow;
+  padding: 3rem 2rem 2rem 2rem;
+  max-width: 600px;
+  margin: 3rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
   &__wrapper {
     display: flex;
-    line-height: 2rem;
-    justify-content: center;
-    background: $primary3;
-    border-bottom: 2px solid;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
+    padding: 0;
   }
 
   &__photo-block {
     text-align: center;
-  }
-  &__info-block {
-    text-align: justify;
+    margin-bottom: 1.5rem;
   }
 
   &__img-card {
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.15);
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+    background: #fff;
   }
-  &__cv-block {
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: center;
+
+  &__img-card:hover {
+    transform: scale(1.05) rotate(-2deg);
   }
 
   &__name-block {
-    margin: 1rem;
+    margin: 0.5rem 0 0.2rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: $profile-text;
+      margin: 0;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile__position {
+      font-size: 1.4rem;
+      color: $profile-subtext;
+      font-weight: 400;
+      margin-top: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.2rem;
+    margin: 1.2rem 0 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background: $social-icon-bg;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+    color: $primary-gradient-start;
+    font-size: 1.7rem;
+    border: 1px solid $profile-border;
+
+    &:hover {
+      background: linear-gradient(135deg, $social-icon-hover 60%, $social-icon-hover2 100%);
+      color: #fff;
+      transform: scale(1.12) rotate(-6deg);
+      box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.18);
+      border: none;
+    }
+
+    img {
+      width: 1.7rem;
+      height: 1.7rem;
+      filter: grayscale(0.2);
+      transition: filter 0.3s;
+    }
+
+    &:hover img {
+      filter: grayscale(0) brightness(1.2);
+    }
+  }
+
+  &__about-block {
+    margin-top: 1.2rem;
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 2rem 2.2rem 2rem 2.2rem;
+    box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.08);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #23272f;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+    position: relative;
+  }
+
+  &__about-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $primary-gradient-end;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__about-text {
+    max-width: 100%;
+    margin: 0 auto;
+    color: #23272f;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  &__about-text p {
+    margin: 0 0 1.1em 0;
+  }
+
+  &__about-text b {
+    color: $primary-gradient-start;
+    font-weight: 700;
+  }
+
+  &__cv-block {
+    padding: 1.5rem 0 0 0;
+    font-size: 1.6rem;
+    text-align: center;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__exsel-button {
+    background: linear-gradient(90deg, $primary-gradient-start 60%, $primary-gradient-end 100%);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+    transition: background 0.3s, transform 0.2s;
+    margin: 0.2rem 0;
+    outline: none;
+  }
+
+  &__exsel-button:hover {
+    background: linear-gradient(90deg, $primary-gradient-end 60%, $primary-gradient-start 100%);
+    transform: translateY(-2px) scale(1.04);
+  }
+
+  @media (max-width: 700px) {
+    max-width: 98vw;
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+    &__img-card {
+      width: 9rem;
+      height: 9rem;
+    }
+    &__name-block h1 {
+      font-size: 2rem;
+    }
+    &__about-block {
+      font-size: 1.1rem;
+      padding: 0.7rem 0.5rem;
+    }
   }
 }

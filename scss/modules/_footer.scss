@@ -1,16 +1,68 @@
+@use '../constants/constants' as *;
+
 .footer {
-  background-color: $primary3;
+  background: $profile-bg;
+  border-radius: 1.2rem 1.2rem 0 0;
+  box-shadow: 0 -4px 24px 0 rgba(31, 38, 135, 0.08);
+  margin: 2rem auto 0 auto;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, $primary-gradient-start 60%, $primary-gradient-end 100%) 1;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 2px solid;
+    max-width: 900px;
+    border-top: none;
+    gap: 1.5rem;
   }
-}
 
-.footer__logo {
-}
-.footer_age {
-}
-.footer__github {
+  &__logo img {
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+    background: #fff;
+    padding: 0.2rem;
+  }
+
+  &_age {
+    color: $profile-subtext;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__github img {
+    border-radius: 50%;
+    background: $social-icon-bg;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      background: linear-gradient(135deg, $social-icon-hover 60%, $social-icon-hover2 100%);
+      transform: scale(1.12) rotate(-6deg);
+      box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.18);
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+    &__logo img {
+      width: 60px;
+      height: 60px;
+    }
+    &__github img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }

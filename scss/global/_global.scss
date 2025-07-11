@@ -4,6 +4,7 @@ $wrapper-width: 100%;
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
   line-height: 10px;
@@ -40,6 +41,7 @@ h3 {
 a {
   text-decoration: none;
   color: $link-text-color;
+
   &:hover {
     text-decoration: underline;
   }
@@ -58,10 +60,17 @@ a {
   width: 58%;
 }
 
-nav,
-header,
-section,
-footer {
+nav, footer {
   display: flex;
   justify-content: center;
+}
+
+.cv-background {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #f6f8fb 60%, #e3e6ee 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

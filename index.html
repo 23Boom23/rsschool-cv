@@ -1,259 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/index.css" rel="stylesheet">
     <title>CV</title>
-  </head>
-  <body>
+</head>
+<body>
+<div class="cv-background">
     <nav class="header-nav">
-      <div class="wrapper header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">About me</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">Skills</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">Code Examples</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">Experience</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">Projects</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">English</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">Contacts</a>
-          </li>
-        </ul>
-      </div>
+        <div class="wrapper header-nav__wrapper">
+            <ul class="header-nav__list">
+                <li class="header-nav__item">
+                    <a href="#about" class="header-nav__link">About me</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#skills" class="header-nav__link">Skills</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#code-example" class="header-nav__link">Code Examples</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#experience" class="header-nav__link">Experience</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#projects" class="header-nav__link">Projects</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#languages" class="header-nav__link">English</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#contacts" class="header-nav__link">Contacts</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- PROFILE -->
-    <header class="profile">
-      <div class="wrapper profile__wrapper">
-        <div class="profile__photo-block">
-          <img src="./img/avatar/avatar.jpg" alt="photo" class="profile__img-card">
-          <div class="profile__name-block">
-            <h1 class="profile__name-block">Frontend Developer</h1>
-          </div>
+    <header class="profile" id="about">
+        <div class="wrapper profile__wrapper">
+            <div class="profile__photo-block">
+                <img src="./img/avatar/avatar.jpg" alt="photo" class="profile__img-card">
+                <div class="profile__name-block">
+                    <h1>Harus Aleksei</h1>
+                    <div class="profile__position">Frontend Developer</div>
+                </div>
+            </div>
+            <div class="profile__socials">
+                <a href="mailto:email@echoecho.com" class="profile__social-link" title="Gmail">
+                    <img src="./img/avatar/svg/gmail-envelope-svgrepo-com.svg" alt="gmail">
+                </a>
+                <a href="https://github.com/23Boom23" class="profile__social-link" title="GitHub">
+                    <img src="./img/avatar/svg/github-svgrepo-com.svg" alt="github">
+                </a>
+                <a href="#" class="profile__social-link" title="Telegram">
+                    <img src="./img/avatar/svg/telegram-svgrepo-com.svg" alt="telegram">
+                </a>
+                <a href="https://www.linkedin.com/in/aleksei-harus/" class="profile__social-link" title="LinkedIn">
+                    <img src="./img/avatar/svg/linkedin-logo-svgrepo-com.svg" alt="linkedin">
+                </a>
+            </div>
+            <div class="profile__about-block">
+                <h2 class="profile__about-title">About me</h2>
+                <div class="profile__about-text">
+                    <p>
+                        Hi! I’m <b>Harus Aleksei</b>, a <b>Front End Engineer</b> from Minsk.<br>
+                        I specialize in <b>Angular</b>, <b>TypeScript</b>,<b>RxJs</b> and <b>NgRx</b>.
+                    </p>
+                    <p>
+                        I love turning ideas into real products, solving complex UI tasks, and making code clean and
+                        scalable.
+                    </p>
+                    <p>
+                        Always learning, always coding — that’s my way.<br>
+                        In my free time: cycling, gym, tech meetups.
+                    </p>
+                </div>
+            </div>
+            <div class="profile__cv-block">
+                <button type="button" class="profile__exsel-button">CV-exsel</button>
+                <button type="button" class="profile__exsel-button" onclick="window.location.href='cv.md'" download>
+                    CV-markdown
+                </button>
+            </div>
         </div>
-        <div class="profile__cv-block">
-          <div class="profile__about-block">
-            <h2>About me</h2>
-            <p class="profile__info-block">
-              My name is Harus Aleksei. I'm a Front End Engineer based in Minsk ☀️. I describe
-              myself as a passionate developer who loves coding, teach new, and the web platform ❤️.
-              Aside from my job, I like to create and contribute new features. That helps me to
-              learn a ton of new stuff, grow as a developer. In my free time you can find me cycling
-              🚲 , at the gym 🏋️‍♂️, on tech meetups and conferences around Minsk and Europe 🗺.
-            </p>
-          </div>
-          <div class="profile__cv-block">
-            <button type="button" class="profile__exsel-button">CV-exsel</button>
-            <button type="button" class="profile__exsel-button">CV-markdown</button>
-          </div>
-        </div>
-      </div>
     </header>
-    <div class="two__columns">
-      <div class="column__wrapper1 left__column">
-        <!-- CONTACTS -->
-        <section class="contacts">
-          <div class="contacts__wrapper">
-            <h2 class="contacts__title">Contacts:</h2>
-            <div class="social-info__link">
-              <a href="mailto:email@echoecho.com" class="social-info__description">
-                <img
-                  src="./img/avatar/svg/gmail-envelope-svgrepo-com.svg"
-                  alt="gmail"
-                  class="social-info__icon"
-                >
-                Gmail
-              </a>
-              <a href="https://github.com/23Boom23" class="social-info__description">
-                <img
-                  src="./img/avatar/svg/github-svgrepo-com.svg"
-                  alt="github"
-                  class="social-info__icon"
-                >
-                GitHub
-              </a>
-              <a class="social-info__description">
-                <img
-                  src="./img/avatar/svg/telegram-svgrepo-com.svg"
-                  alt="telegram"
-                  class="social-info__icon"
-                >
-                Telegram
-              </a>
-              <a href="https://www.linkedin.com/in/aleksei-harus/" class="social-info__description">
-                <img
-                  src="./img/avatar/svg/linkedin-logo-svgrepo-com.svg"
-                  alt="linkedin"
-                  class="social-info__icon"
-                >
-                LinkedIn
-              </a>
+    <div class="cv-content">
+        <section class="skils-info" id="skills">
+            <div class="skils-info__wrapper">
+                <h2 class="skils-info__title">Skills:</h2>
+                <ul class="skils-info__block">
+                    <li class="skils-info__text">Angular</li>
+                    <li class="skils-info__text">JS/TS</li>
+                    <li class="skils-info__text">RxJS</li>
+                    <li class="skils-info__text">NgRx</li>
+                    <li class="skils-info__text">Git</li>
+                    <li class="skils-info__text">NodeJS</li>
+                </ul>
             </div>
-          </div>
         </section>
-        <!-- CONTACTS -->
-        <!-- SKILLS -->
-        <section class="skils-info">
-          <div class="skils-info__wrapper">
-            <h2 class="skils-info__title">Skills:</h2>
-            <ul class="skils-info__block">
-              <li class="skils-info__text">HTML</li>
-              <li class="skils-info__text">CSS/SCSS</li>
-              <li class="skils-info__text">JS/TS</li>
-              <li class="skils-info__text">Angular</li>
-              <li class="skils-info__text">RxJS</li>
-              <li class="skils-info__text">Git</li>
-              <li class="skils-info__text">NodeJS</li>
-              <li class="skils-info__text">Angular Material/Tailwand</li>
-            </ul>
-          </div>
-        </section>
-        <!-- SKILLS -->
-        <!-- LANGUAGES -->
-        <section class="languages">
-          <div class="languages__wrapper">
-            <h2 class="languages__text">Languages:</h2>
-            <ul class="languages__block">
-              <li class="languages__info">Belarussian</li>
-              <li class="languages__info">Russian</li>
-              <li class="languages__info">English(B1)</li>
-            </ul>
-          </div>
-        </section>
-        <!-- LANGUAGES -->
-      </div>
-      <div class="column__wrapper2 right__column">
-        <section class="experience">
-          <div class="experience__wrapper">
-            <h2 class="experience__title">Experience:</h2>
-            <p class="experience__text">1 year experience</p>
-          </div>
-        </section>
-        <section class="courses">
-          <div class="courses__wrapper">
-            <h2 class="courses__title">Courses:</h2>
-            <ul class="courses__list">
-              <li>Redev</li>
-              <li>Udemy</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
-        </section>
-        <section class="projects">
-          <div class="projects__wrapper">
-            <h2 class="projects__title">Projects:</h2>
-            <div class="projects__cards">
-              <div class="div1">
-                <a href="https://23boom23.github.io/rsschool-cv/">
-                  <img src="./img/avatar/svg/portfolio.svg" width="150" height="150" alt="logo">
-                </a>
-              </div>
-              <div class="div2">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=2"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div3">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=3"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div4">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=14"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div5">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=5"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div6">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=6"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div7">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=7"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div8">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=8"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
-              <div class="div9">
-                <a>
-                  <img
-                    src="https://picsum.photos/200/300?random=9"
-                    width="150"
-                    height="150"
-                    alt="logo"
-                  >
-                </a>
-              </div>
+        <section class="languages" id="languages">
+            <div class="languages__wrapper">
+                <h2 class="languages__text">Languages:</h2>
+                <ul class="languages__block">
+                    <li class="languages__info">Belarussian</li>
+                    <li class="languages__info">Russian</li>
+                    <li class="languages__info">English(B1)</li>
+                </ul>
             </div>
-          </div>
         </section>
-        <section class="education">
-          <div class="education__wrapper">
-            <h2 class="education__title">Education</h2>
-            <p class="education__text">BNTU</p>
-          </div>
+        <section class="experience" id="experience">
+            <div class="experience__wrapper">
+                <h2 class="experience__title">Experience:</h2>
+                <div class="experience__years">
+                    <span class="experience__icon" aria-label="Experience">💼</span>
+                    <span class="experience__number">3</span>
+                    <span class="experience__desc">year<br>of experience</span>
+                </div>
+            </div>
         </section>
-        <section class="code-example">
-          <div class="code-example__wrapper">
-            <h2 class="code-example__title">Code example</h2>
-            <pre class="code-example__text">
+        <section class="courses" id="courses">
+            <div class="courses__wrapper">
+                <h2 class="courses__title">Courses:</h2>
+                <ul class="courses__list">
+                    <li>Youtube</li>
+                    <li>Redev</li>
+                    <li>Udemy</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects__wrapper">
+                <h2 class="projects__title">Projects:</h2>
+                <div class="projects__cards">
+                    <div class="div1">
+                        <a href="https://23boom23.github.io/rsschool-cv/">
+                            <img src="https://cataas.com/cat?width=150&height=150&v=1" width="150" height="150"
+                                 alt="cat project 1">
+                        </a>
+                    </div>
+                    <div class="div2">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=2" width="150" height="150"
+                                 alt="cat project 2">
+                        </a>
+                    </div>
+                    <div class="div3">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=3" width="150" height="150"
+                                 alt="cat project 3">
+                        </a>
+                    </div>
+                    <div class="div4">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=4" width="150" height="150"
+                                 alt="cat project 4">
+                        </a>
+                    </div>
+                    <div class="div5">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=5" width="150" height="150"
+                                 alt="cat project 5">
+                        </a>
+                    </div>
+                    <div class="div6">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=6" width="150" height="150"
+                                 alt="cat project 6">
+                        </a>
+                    </div>
+                    <div class="div7">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=7" width="150" height="150"
+                                 alt="cat project 7">
+                        </a>
+                    </div>
+                    <div class="div8">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=8" width="150" height="150"
+                                 alt="cat project 8">
+                        </a>
+                    </div>
+                    <div class="div9">
+                        <a>
+                            <img src="https://cataas.com/cat?width=150&height=150&v=9" width="150" height="150"
+                                 alt="cat project 9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="education__wrapper">
+                <h2 class="education__title">Education</h2>
+                <div class="education__info">
+                    <span class="education__icon" aria-label="Education">🎓</span>
+                    <span class="education__name">Belarusian National Technical University</span>
+                    <span class="education__city">Minsk, Belarus</span>
+                </div>
+            </div>
+        </section>
+        <section class="code-example" id="code-example">
+            <div class="code-example__wrapper">
+                <h2 class="code-example__title">Code example</h2>
+                <pre class="code-example__text">
             <code>
               public getConfigForGrid(action: string): any {
                 const gridId = !this.gridId ? this.currentUrl : this.gridId;
@@ -268,31 +218,43 @@
               }
             </code>
           </pre>
-          </div>
+            </div>
         </section>
-      </div>
     </div>
-    <footer class="footer">
-      <div class="wrapper footer__wrapper">
-        <div class="footer__logo">
-          <a href="https://rs.school/js-stage0/">
-            <img src="./img/avatar/svg/rs_school_js.svg" alt="rsshool" width="80" height="80">
-          </a>
+    <footer class="footer" id="contacts">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__logo">
+                <a href="https://rs.school/js-stage0/">
+                    <img src="./img/avatar/svg/rs_school_js.svg" alt="rsshool" width="80" height="80">
+                </a>
+            </div>
+            <div class="footer_age">
+                <h2>Done in 2022</h2>
+            </div>
+            <div class="footer__github">
+                <a href="https://github.com/23Boom23">
+                    <img
+                            src="./img/avatar/svg/github-svgrepo-com.svg"
+                            alt="github"
+                            width="40"
+                            height="40"
+                    >
+                </a>
+            </div>
         </div>
-        <div class="footer_age">
-          <h2>Done in 2022</h2>
-        </div>
-        <div class="footer__github">
-          <a href="https://github.com/23Boom23">
-            <img
-              src="./img/avatar/svg/github-svgrepo-com.svg"
-              alt="github"
-              width="40"
-              height="40"
-            >
-          </a>
-        </div>
-      </div>
     </footer>
-  </body>
+</div>
+<script>
+    // Плавная прокрутка для всех якорных ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href.length > 1 && document.querySelector(href)) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    });
+</script>
+</body>
 </html>
