@@ -46,19 +46,30 @@
                     <div class="profile__position">Frontend Developer</div>
                 </div>
             </div>
-            <div class="profile__socials">
-                <a href="mailto:email@echoecho.com" class="profile__social-link" title="Gmail">
-                    <img src="./img/avatar/svg/gmail-envelope-svgrepo-com.svg" alt="gmail">
-                </a>
-                <a href="https://github.com/23Boom23" class="profile__social-link" title="GitHub">
-                    <img src="./img/avatar/svg/github-svgrepo-com.svg" alt="github">
-                </a>
-                <a href="#" class="profile__social-link" title="Telegram">
-                    <img src="./img/avatar/svg/telegram-svgrepo-com.svg" alt="telegram">
-                </a>
-                <a href="https://www.linkedin.com/in/aleksei-harus/" class="profile__social-link" title="LinkedIn">
-                    <img src="./img/avatar/svg/linkedin-logo-svgrepo-com.svg" alt="linkedin">
-                </a>
+            <div>
+                <ul class="profile__socials">
+                    <li>
+                        <a href="mailto:email@echoecho.com" class="profile__social-link" title="Gmail">
+                            <img src="./img/avatar/svg/gmail-envelope-svgrepo-com.svg" alt="gmail">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/23Boom23" class="profile__social-link" title="GitHub">
+                            <img src="./img/avatar/svg/github-svgrepo-com.svg" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="profile__social-link" title="Telegram">
+                            <img src="./img/avatar/svg/telegram-svgrepo-com.svg" alt="telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aleksei-harus/" class="profile__social-link"
+                           title="LinkedIn">
+                            <img src="./img/avatar/svg/linkedin-logo-svgrepo-com.svg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="profile__about-block">
                 <h2 class="profile__about-title">About me</h2>
@@ -79,13 +90,13 @@
             </div>
             <div class="profile__cv-block">
                 <button type="button" class="profile__exsel-button">CV-exsel</button>
-                <button type="button" class="profile__exsel-button" onclick="window.location.href='cv.md'" download>
+                <a href="cv.md" class="profile__exsel-button" download>
                     CV-markdown
-                </button>
+                </a>
             </div>
         </div>
     </header>
-    <div class="cv-content">
+    <main class="cv-content">
         <section class="skils-info" id="skills">
             <div class="skils-info__wrapper">
                 <h2 class="skils-info__title">Skills:</h2>
@@ -113,7 +124,7 @@
             <div class="experience__wrapper">
                 <h2 class="experience__title">Experience:</h2>
                 <div class="experience__years">
-                    <span class="experience__icon" aria-label="Experience">💼</span>
+                    <span class="experience__icon">💼</span>
                     <span class="experience__number">3</span>
                     <span class="experience__desc">year<br>of experience</span>
                 </div>
@@ -194,7 +205,7 @@
             <div class="education__wrapper">
                 <h2 class="education__title">Education</h2>
                 <div class="education__info">
-                    <span class="education__icon" aria-label="Education">🎓</span>
+                    <span class="education__icon">🎓</span>
                     <span class="education__name">Belarusian National Technical University</span>
                     <span class="education__city">Minsk, Belarus</span>
                 </div>
@@ -220,7 +231,7 @@
           </pre>
             </div>
         </section>
-    </div>
+    </main>
     <footer class="footer" id="contacts">
         <div class="wrapper footer__wrapper">
             <div class="footer__logo">
